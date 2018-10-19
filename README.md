@@ -1,3 +1,0 @@
-# vanessaserao.github.io
-
-portfolio
