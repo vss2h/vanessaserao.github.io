@@ -2,18 +2,56 @@
 
 <html>
  <body>
+        <style>
      <h3>Noise Detector</h3>
-
+     .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
      <h4> Overview</h4>
      <p>
-         The noise detector is a project created for Middle Tennessee States University monitoring sound in the quiet zones of its library.
+     The noise detector is a project created for Middle Tennessee States University. The purpose of the project was intended to monitor sound in the quiet zones of the university’s library. 
      <br>
-        Its purpose is monitoring the sound in the quiet zones.<br>
-        As the staff at the library were getting many complaints about the quiet zones being noisy at times, a tool was needed
-        to come in help of those students.
+     As the staff at the library was getting many complaints and concerns by students about the quiet zones being noisy at times, a tool was needed to come in aid of those students to circumvent these complaints.
+     
      </p>
 
+     <h4>Tools & Usability</h4>
+
+     <p>
+        Through the creation of this project, many tools such as Raspberry Pi 3 (image 1), noise measurement monitor (image 2&3), LAMP server, and Adobe Dreamweaver were used. The project was composed of a web application, sound monitor, and a database. 
+        <br>
+        The Raspberry Pi 3 was used to create the main foundation of the project. It hosted the web application through its LAMP server, and it also stored the data retrieved from the sound monitor into its database. The web application was created using Adobe Dreamweaver. 
      </p>
+     <div class="row">
+            <div class="column">
+                    <img src= "img/raspberry3.jpg"alt="Application Image 4" class="center" style="width:19%">
+            </div>
+            <p>Image 1</p>
+            <div class="column">
+                <img src= "img/carton.jpeg"alt="Application Image 2" class="center" style="width:19%">
+            </div>
+            <p>Image 2</p>
+            <div class="column">
+                <img src= "img/decibelmeter.jpg"alt="Application Image 3" class="center" style="width:19%">
+            </div>
+            <p>Image 3</p>
+        </div>   
+     <h4>Functionality</h4>
+     <p>
+        The project is placed in different quiet areas of the library to detect any loud and disruptive noises. The noise measurement monitor receives different noise levels and compares it to the thresholds. The noise is not processed until a certain level of it is reached. Once this level of threshold is reached, the information providing the time, date, and noise level is stored in the database within the web application as well as sending an email with the information to the library staff.
+     </p>
+     
+
      <iframe width="560" height="315" src="https://www.youtube.com/embed/zKUdan6DYlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  </body>
 </html>
